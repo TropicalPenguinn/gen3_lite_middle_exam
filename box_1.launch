@@ -1,0 +1,43 @@
+<launch>
+
+
+  <!-- Workpiece Model -->
+  <group ns="box1">
+    <param name="robot_description" command="$(find xacro)/xacro '$(find gen3_lite_examples)/models/box.xacro'" />
+      
+    <node name="urdf_spawner1" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model box -param robot_description"/> 
+  </group>
+
+  <group ns="box2">
+    <param name="robot_description" command="$(find xacro)/xacro '$(find gen3_lite_examples)/models/box2.xacro'" />
+      
+    <node name="urdf_spawner2" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model box2 -param robot_description"/> 
+  </group>
+
+
+  <group ns="box3">
+    <param name="robot_description" command="$(find xacro)/xacro '$(find gen3_lite_examples)/models/box3.xacro'" />
+      
+    <node name="urdf_spawner3" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model box3 -param robot_description"/> 
+  </group>
+
+<group ns="box4">
+    <param name="robot_description" command="$(find xacro)/xacro '$(find gen3_lite_examples)/models/box4.xacro'" />
+      
+    <node name="urdf_spawner4" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model box4 -param robot_description"/> 
+  </group>
+
+  <group ns="box5">
+    <param name="robot_description" command="$(find xacro)/xacro '$(find gen3_lite_examples)/models/box5.xacro'" />
+      
+    <node name="urdf_spawner5" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model box5 -param robot_description"/> 
+  </group>
+
+
+  <group ns="box6">
+    <param name="robot_description" command="$(find xacro)/xacro '$(find gen3_lite_examples)/models/box6.xacro'" />
+      
+    <node name="urdf_spawner6" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen" args="-urdf -model box6 -param robot_description"/> 
+  </group>
+
+</launch>
